@@ -17,7 +17,7 @@ $(function () {
             $.ajax({
                 contentType: 'application/json',
                 dataType: 'json',
-                url: "http://localhost:5000/api/sendmsg",
+                url: "http://ec2-65-0-29-248.ap-south-1.compute.amazonaws.com:5000/api/sendmsg",
                 type: "POST",
                 data: JSON.stringify({
                     name: name,
