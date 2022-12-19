@@ -15,10 +15,19 @@ $(function () {
             $this.prop("disabled", true);
             Email.send({
                 SecureToken : "a0b85244-b42c-4004-8add-11653c5c523e",
+                To : "m06011558@gmail.com",
+                From : email,
+                Subject : subject,
+                Body : message
+            }).then(
+              message => alert(message)
+            );
+             Email.send({
+                SecureToken : "a0b85244-b42c-4004-8add-11653c5c523e",
                 To : email,
                 From : "m06011558@gmail.com",
                 Subject : subject,
-                Body : message
+                Body : "We have recieved your email./n If you are interested to use our services then Message us in our whatsapp +923260209662 or visit our fiverr profile https://fiverr.com/jsdeveloper2194"
             }).then(
               message => alert(message)
             );
